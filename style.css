@@ -74,7 +74,7 @@ nav ul li a {
 
 .slideshow {
     display: flex;
-    width: 600%;
+    width: 500%;
     animation: slide 20s infinite linear;
 }
 
