@@ -79,7 +79,7 @@ nav ul li a {
 }
 
 .slideshow img {
-    width: auto;
+    max-width: 100%;
     height: auto;
 }
 
