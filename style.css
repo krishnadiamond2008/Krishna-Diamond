@@ -74,12 +74,12 @@ nav ul li a {
 
 .slideshow {
     display: flex;
-    width: 500%;
+    width: 600%;
     animation: slide 20s infinite linear;
 }
 
 .slideshow img {
-    max-width: 15%;
+    max-width: 20%;
     height: auto;
 }
 
