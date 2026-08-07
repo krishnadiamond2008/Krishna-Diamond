@@ -17,12 +17,19 @@
         <a href="#home">
             <img src="./logos/Krishna Diamond logo.png" alt="Krishna Diamond Logo">
         </a>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <nav>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#products">Products</a></li>
+                <li><a href="#trust-section">Why Choose Us</a></li>
                 <li><a href="#about-us">About Us</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#founders">Founders</a></li>
                 <li><a href="#contact-us">Contact Us</a></li>
             </ul>
@@ -61,31 +68,63 @@
                     <img src="./products/icons/Picsart_24-12-23_18-30-05-880.png" alt="Rings">
                     <h2>Rings</h2>
                     <p>Exquisite elegance in every dazzling diamond ring</p>
+                    <a href="./src/rings.html" class="category-cta">View Collection &rarr;</a>
                 </div>
                 <div class="product-category" onclick="location.href='./src/bracelets.html'">
                     <img src="./products/icons/Picsart_24-12-24_10-26-46-218.png" alt="Bracelets">
                     <h2>Bracelets</h2>
                     <p>Sparkling sophistication wrapped around your wrist</p>
+                    <a href="./src/bracelets.html" class="category-cta">View Collection &rarr;</a>
                 </div>
                 <div class="product-category" onclick="location.href='./src/bangles.html'">
                     <img src="./products/icons/Picsart_24-12-24_10-42-38-685.png" alt="Bangles">
                     <h2>Bangles</h2>
                     <p>Timeless beauty crafted with brilliant diamonds</p>
+                    <a href="./src/bangles.html" class="category-cta">View Collection &rarr;</a>
                 </div>
                 <div class="product-category" onclick="location.href='./src/earings.html'">
                     <img src="./products/icons/Picsart_24-12-24_10-31-34-530.png" alt="Earrings">
                     <h2>Earrings</h2>
                     <p>Radiant diamond earrings to elevate your elegance</p>
+                    <a href="./src/earings.html" class="category-cta">View Collection &rarr;</a>
                 </div>
                 <div class="product-category" onclick="location.href='./src/pendantset.html'">
                     <img src="./products/icons/Picsart_24-12-24_10-45-55-290.png" alt="Pendant Set">
                     <h2>Pendant Set</h2>
                     <p>Graceful glamour with every exquisite pendant set</p>
+                    <a href="./src/pendantset.html" class="category-cta">View Collection &rarr;</a>
                 </div>
                 <div class="product-category" onclick="location.href='./src/necklaceset.html'">
                     <img src="./products/icons/Picsart_24-12-24_10-39-00-163.png" alt="Necklace Set">
                     <h2>Necklace Set</h2>
                     <p>Magnificent masterpieces to adorn your neckline</p>
+                    <a href="./src/necklaceset.html" class="category-cta">View Collection &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="trust-section">
+            <h2>Why Choose Krishna Diamond</h2>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>IGI Certified Diamonds</h3>
+                    <p>Every diamond is graded and certified by the International Gemological Institute (IGI) for authenticity, clarity, and cut precision.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon"><i class="fas fa-award"></i></div>
+                    <h3>45+ Years Legacy</h3>
+                    <p>Crafting excellence since 1978 with decades of trust, integrity, and word-of-mouth referrals across Vadodara & worldwide.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Direct Manufacturer</h3>
+                    <p>Eliminating middlemen to offer high-grade certified diamond jewellery at direct manufacturer pricing and maximum value.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon"><i class="fas fa-globe-asia"></i></div>
+                    <h3>NRI & Global Clientele</h3>
+                    <p>Trusted by Non-Resident Indians (NRIs) and international buyers who value exquisite craftsmanship and complete transparency.</p>
                 </div>
             </div>
         </section>
@@ -96,16 +135,49 @@
             <p>Specialising in diamond manufacturing, wholesaling, and creating stunning diamond jewellery, we bring brilliance to life. Every diamond is a testament to our dedication to quality, precision, and timeless beauty. Our jewellery reflects not just elegance but the stories and dreams of our valued clients.</p>
             <p>We take pride in offering diamonds certified by the International Gemological Institute (IGI), ensuring the highest standards of authenticity and quality. With IGI certification, our customers enjoy complete peace of mind, knowing their diamonds are graded by experts for their brilliance, cut, and clarity.</p>
             <p>With decades of experience and a reputation that speaks for itself, we proudly serve a diverse clientele, including non-resident Indians (NRIs) who appreciate the artistry and integrity we stand for. Our unwavering commitment to excellence has allowed us to grow steadily, guided by the trust and satisfaction of our customers.</p>
-            <blockquote>"Where certified quality meets affordability, and brilliance shines with reliability."</blockquote>
+            <blockquote style="margin-bottom: 25px;">"Where certified quality meets affordability, and brilliance shines with reliability."</blockquote>
 
             <div class="videos-container">
                 <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/SZTsowzIdp8?si=l4IMVxecsbH5IAPM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/SZTsowzIdp8?si=l4IMVxecsbH5IAPM" title="Krishna Diamond Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/sk4q5wLaAPY?si=hwk9pkQ22SLUFRiF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/sk4q5wLaAPY?si=hwk9pkQ22SLUFRiF" title="Krishna Diamond Craftsmanship" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Customer Reviews & Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Krishna Diamond crafted a custom diamond necklace for my wedding. The diamond quality and finishing were top-notch, and having IGI certification gave us complete peace of mind!"</p>
+                    <div class="client-name">Ananya Sharma</div>
+                    <div class="client-location">Vadodara, Gujarat</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"As an NRI visiting Vadodara, I wanted authentic certified diamond bangles. Paresh Sir and Lalit Sir provided direct manufacturer rates and genuine guidance. Highly recommended!"</p>
+                    <div class="client-name">Rajesh Patel</div>
+                    <div class="client-location">London, UK</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The solitaire ring design was exactly what I dreamed of. Excellent pricing compared to retail stores, and unbelievable customer service!"</p>
+                    <div class="client-name">Pooja Shah</div>
+                    <div class="client-location">Ahmedabad, Gujarat</div>
+                </div>
+            </div>
+            <a href="https://g.page/r/Cfv-_hC_cRo9EAE/review" class="google-review-btn" target="_blank">
+                <i class="fab fa-google"></i> Read More Reviews on Google
+            </a>
         </section>
 
         <section id="founders">
@@ -161,8 +233,31 @@
         </section>
     </main>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919909093200?text=Hello%20Krishna%20Diamond,%20I%20would%20like%20to%20inquire%20about%20your%20certified%20diamond%20jewellery." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer>
         <p>&copy; Krishna Diamond. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+
+            // Close mobile menu when a nav link is clicked
+            document.querySelectorAll('#navLinks a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+    </script>
 </body>
 </html>
