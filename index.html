@@ -28,6 +28,7 @@
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#trust-section">Why Choose Us</a></li>
+                <li><a href="#heritage">Heritage</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#founders">Founders</a></li>
@@ -125,6 +126,48 @@
                     <div class="trust-icon"><i class="fas fa-globe-asia"></i></div>
                     <h3>NRI & Global Clientele</h3>
                     <p>Trusted by Non-Resident Indians (NRIs) and international buyers who value exquisite craftsmanship and complete transparency.</p>
+                </div>
+            </div>
+
+            <button class="igi-action-btn" id="openIgiModalBtn">
+                <i class="fas fa-search-plus"></i> View Sample IGI Certificate & 4Cs Guide
+            </button>
+        </section>
+
+        <section id="heritage">
+            <h2>Our Heritage Since 1978</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">1978</div>
+                        <h3>The Humble Beginning</h3>
+                        <p>Founder Lalit Patel arrives in Mumbai at the age of 13, starting as a passionate diamond polisher to master the art of diamond cutting and brilliant faceting.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">1995</div>
+                        <h3>Direct Manufacturing Excellence</h3>
+                        <p>Expanding from polishing into direct diamond manufacturing and wholesaling, ensuring strict quality control from rough diamond selection to finished gem.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2008</div>
+                        <h3>Establishment of Krishna Diamond</h3>
+                        <p>Formally establishing Krishna Diamond under the joint leadership of Lalit Patel and Paresh Patel in Vadodara, bringing wholesale certified diamonds directly to valued clients & trade partners.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Present</div>
+                        <h3>Certified Global Trust & Trade Excellence</h3>
+                        <p>Serving trade partners, international buyers, and private clients worldwide with 100% IGI Certified diamond jewellery, bespoke manufacturing, and unparalleled value.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -238,11 +281,60 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- IGI Certificate Modal Overlay -->
+    <div class="igi-modal-overlay" id="igiModal">
+        <div class="igi-modal-content">
+            <button class="modal-close-btn" id="closeIgiModalBtn">&times;</button>
+
+            <div class="igi-modal-header">
+                <h3>IGI Diamond Certification & 4Cs Guide</h3>
+                <p>Guaranteed Authenticity Graded by the International Gemological Institute</p>
+            </div>
+
+            <div class="four-cs-grid">
+                <div class="c-card">
+                    <h4>Cut</h4>
+                    <p>Ideal / Excellent precision faceting for maximum light reflection and brilliance.</p>
+                </div>
+                <div class="c-card">
+                    <h4>Color</h4>
+                    <p>D to F Colorless grade selecting diamonds with pure radiant transparency.</p>
+                </div>
+                <div class="c-card">
+                    <h4>Clarity</h4>
+                    <p>VVS to VS clarity ensuring flawless internal purity under 10x magnification.</p>
+                </div>
+                <div class="c-card">
+                    <h4>Carat</h4>
+                    <p>Accurate certified carat weight measurement with laser-engraved serial IDs.</p>
+                </div>
+            </div>
+
+            <div class="cert-sample-card">
+                <div class="cert-header">
+                    <h4>Sample IGI Diamond Report</h4>
+                    <span class="cert-badge">Official IGI Certified</span>
+                </div>
+                <div class="cert-details">
+                    <div><span class="label">Report No:</span> IGI-KD-9847291</div>
+                    <div><span class="label">Shape/Cut:</span> Round Brilliant</div>
+                    <div><span class="label">Carat Weight:</span> 1.05 Carat</div>
+                    <div><span class="label">Color Grade:</span> E (Colorless)</div>
+                    <div><span class="label">Clarity Grade:</span> VVS1</div>
+                    <div><span class="label">Cut Grade:</span> Excellent</div>
+                    <div><span class="label">Laser Inscription:</span> IGI 9847291</div>
+                    <div><span class="label">Verification:</span> Direct IGI Lab Certified</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; Krishna Diamond. All Rights Reserved.</p>
     </footer>
 
     <script>
+        // Mobile Menu Controller
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
 
@@ -251,11 +343,33 @@
                 navLinks.classList.toggle('active');
             });
 
-            // Close mobile menu when a nav link is clicked
             document.querySelectorAll('#navLinks a').forEach(link => {
                 link.addEventListener('click', () => {
                     navLinks.classList.remove('active');
                 });
+            });
+        }
+
+        // IGI Modal Controller
+        const openIgiModalBtn = document.getElementById('openIgiModalBtn');
+        const closeIgiModalBtn = document.getElementById('closeIgiModalBtn');
+        const igiModal = document.getElementById('igiModal');
+
+        if (openIgiModalBtn && igiModal) {
+            openIgiModalBtn.addEventListener('click', () => {
+                igiModal.classList.add('active');
+            });
+        }
+
+        if (closeIgiModalBtn && igiModal) {
+            closeIgiModalBtn.addEventListener('click', () => {
+                igiModal.classList.remove('active');
+            });
+
+            igiModal.addEventListener('click', (e) => {
+                if (e.target === igiModal) {
+                    igiModal.classList.remove('active');
+                }
             });
         }
     </script>
